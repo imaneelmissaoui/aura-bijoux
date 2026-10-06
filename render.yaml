@@ -1,0 +1,6 @@
+services:
+  - type: web
+    runtime: static
+    name: aura-bijoux
+    buildCommand: echo "Static site"
+    staticPublishPath: .

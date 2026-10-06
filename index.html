@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Aura — bijoux faits main en pierres naturelles. Pièces singulières, petites séries, commandes via Vinted."/>
+  <title>Aura — Bijoux singuliers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Aura accueil">
+    <span class="logo-mark">A</span>
+    <span>
+      <strong>AURA</strong>
+      <small>BIJOUX SINGULIERS</small>
+    </span>
+  </a>
+
+  <nav class="nav">
+    <a href="#collection" data-fr="Les bijoux" data-en="Jewelry">Les bijoux</a>
+    <a href="#maison" data-fr="La maison Aura" data-en="About Aura">La maison Aura</a>
+  </nav>
+
+  <div class="actions">
+    <button class="lang" id="langBtn" aria-label="Changer de langue">FR / EN</button>
+    <button class="icon-btn" id="favBtn" aria-label="Favoris">♡ <span id="favCount">0</span></button>
+    <button class="icon-btn" id="cartBtn" aria-label="Panier">Bag <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow" data-fr="L’ART DU BIJOU FAIT MAIN" data-en="THE ART OF HANDMADE JEWELRY">L’ART DU BIJOU FAIT MAIN</p>
+      <h1 data-fr="Ce petit éclat qui vous ressemble." data-en="A little sparkle that feels like you.">Ce petit éclat qui vous ressemble.</h1>
+      <p class="lede" data-fr="Des pierres naturelles, un fil délicatement façonné. Des bijoux imaginés pour révéler ce qui vous rend unique."
+         data-en="Natural stones, delicately shaped wire. Jewelry designed to reveal what makes you unique.">
+         Des pierres naturelles, un fil délicatement façonné. Des bijoux imaginés pour révéler ce qui vous rend unique.
+      </p>
+      <a class="cta" href="#collection" data-fr="Découvrir la collection" data-en="Discover the collection">Découvrir la collection</a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb orb1"></div><div class="orb orb2"></div><div class="wire"></div>
+      <span class="signature">Aura</span>
+    </div>
+  </section>
+
+  <section class="values">
+    <span data-fr="Façonné à la main" data-en="Handcrafted">Façonné à la main</span>
+    <span data-fr="Pierres naturelles" data-en="Natural stones">Pierres naturelles</span>
+    <span data-fr="Pièces uniques & petites séries" data-en="Unique pieces & small batches">Pièces uniques & petites séries</span>
+  </section>
+
+  <section id="collection" class="collection">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">01 — <span data-fr="LES CRÉATIONS AURA" data-en="AURA CREATIONS">LES CRÉATIONS AURA</span></p>
+        <h2 data-fr="Simple. Vraie. Unique." data-en="Simple. Genuine. Unique.">Simple. Vraie. Unique.</h2>
+      </div>
+      <a class="text-link" href="https://www.vinted.fr/member/92801331" target="_blank" rel="noopener"
+         data-fr="Voir la boutique Vinted ↗" data-en="Visit Vinted shop ↗">Voir la boutique Vinted ↗</a>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters" id="filters">
+        <button class="active" data-filter="all" data-fr="Tous les bijoux" data-en="All jewelry">Tous les bijoux</button>
+        <button data-filter="earrings" data-fr="Boucles d’oreilles" data-en="Earrings">Boucles d’oreilles</button>
+        <button data-filter="necklace" data-fr="Colliers" data-en="Necklaces">Colliers</button>
+        <button data-filter="set" data-fr="Parures" data-en="Sets">Parures</button>
+        <button data-filter="pendant" data-fr="Pendentifs" data-en="Pendants">Pendentifs</button>
+      </div>
+      <input id="search" type="search" placeholder="Rechercher un bijou" aria-label="Rechercher un bijou"/>
+    </div>
+
+    <div class="grid" id="productGrid"></div>
+    <p class="fineprint" data-fr="Prix hors livraison et frais Vinted. Disponibilité à vérifier sur l’annonce."
+       data-en="Prices exclude shipping and Vinted fees. Availability should be checked on the listing.">
+      Prix hors livraison et frais Vinted. Disponibilité à vérifier sur l’annonce.
+    </p>
+  </section>
+
+  <section id="maison" class="story">
+    <div class="story-card">
+      <p class="eyebrow" data-fr="AURA · LE DÉTAIL FAIT LA DIFFÉRENCE" data-en="AURA · DETAILS MAKE THE DIFFERENCE">AURA · LE DÉTAIL FAIT LA DIFFÉRENCE</p>
+      <h2 data-fr="Une pierre. Un fil. Une petite histoire." data-en="A stone. A wire. A little story.">Une pierre. Un fil. Une petite histoire.</h2>
+      <p data-fr="Aura est née du plaisir de créer avec les mains. Je choisis les pierres pour leurs nuances, puis je façonne le fil autour d’elles, dans un jeu de courbes et d’équilibre. Chaque création garde ses petites singularités : une nuance, une courbe, une légère asymétrie. C’est aussi cela, le charme du fait main."
+         data-en="Aura was born from the joy of making things by hand. I choose stones for their shades, then shape the wire around them in a balance of curves and movement. Each creation keeps its little singularities: a shade, a curve, a slight asymmetry. That is part of the beauty of handmade jewelry.">
+        Aura est née du plaisir de créer avec les mains. Je choisis les pierres pour leurs nuances, puis je façonne le fil autour d’elles, dans un jeu de courbes et d’équilibre. Chaque création garde ses petites singularités : une nuance, une courbe, une légère asymétrie. C’est aussi cela, le charme du fait main.
+      </p>
+      <p class="signed"><strong>Imane</strong><br><span data-fr="Créatrice d’Aura" data-en="Founder & creator of Aura">Créatrice d’Aura</span></p>
+      <a class="cta secondary" href="https://www.vinted.fr/member/92801331" target="_blank" rel="noopener"
+         data-fr="Échanger avec moi sur Vinted" data-en="Message me on Vinted">Échanger avec moi sur Vinted</a>
+    </div>
+    <div class="custom-card">
+      <div class="mini-gem"></div>
+      <p class="eyebrow" data-fr="UNE ENVIE BIEN À VOUS" data-en="YOUR OWN IDEA">UNE ENVIE BIEN À VOUS</p>
+      <h3 data-fr="Et si on imaginait votre bijou ?" data-en="What if we imagined your jewelry together?">Et si on imaginait votre bijou ?</h3>
+      <p data-fr="Une pierre, une couleur, un style… Parlons de la création que vous avez en tête."
+         data-en="A stone, a color, a style… Tell me about the piece you have in mind.">
+         Une pierre, une couleur, un style… Parlons de la création que vous avez en tête.
+      </p>
+      <a class="text-link" href="https://www.vinted.fr/member/92801331" target="_blank" rel="noopener"
+         data-fr="Parlons de votre envie sur Vinted ↗" data-en="Tell me about it on Vinted ↗">Parlons de votre envie sur Vinted ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <strong>AURA</strong>
+    <p data-fr="Simple. Vraie. Unique." data-en="Simple. Genuine. Unique.">Simple. Vraie. Unique.</p>
+  </div>
+  <div class="footer-links">
+    <button data-modal="shipping" data-fr="Commander & livraison" data-en="Orders & shipping">Commander & livraison</button>
+    <button data-modal="care" data-fr="Prendre soin de vos bijoux" data-en="Jewelry care">Prendre soin de vos bijoux</button>
+    <button data-modal="privacy" data-fr="Confidentialité" data-en="Privacy">Confidentialité</button>
+  </div>
+  <p>© 2026 Aura · <span data-fr="Imaginé avec douceur. Façonné à la main." data-en="Designed with care. Crafted by hand.">Imaginé avec douceur. Façonné à la main.</span></p>
+</footer>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-panel">
+    <button class="close" id="closeDrawer">×</button>
+    <h3 id="drawerTitle">Votre sélection</h3>
+    <div id="drawerBody"></div>
+    <a class="cta full" href="https://www.vinted.fr/member/92801331" target="_blank" rel="noopener"
+       data-fr="Finaliser sur Vinted" data-en="Continue on Vinted">Finaliser sur Vinted</a>
+  </div>
+</div>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-panel">
+    <button class="close" id="closeModal">×</button>
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
